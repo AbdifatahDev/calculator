@@ -29,6 +29,8 @@ app.post("/", function (req, res) {
   } else if (type == "div") {
     result = num1 / num2;
     res.send("the result is " + result);
+  }else {
+    res.send("type is not match");
   }
 });
 
